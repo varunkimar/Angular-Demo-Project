@@ -11,7 +11,6 @@
         <th class="text-primary">
             Product Price
         </th>
-        
         <th class="text-primary">
             Product Description
         </th>
@@ -25,7 +24,6 @@
         <td>{{p.price|currency:'INR'}}</td>
         <td><b>{{p.description}}</b></td>
 <td><img src="{{p.imgurl}}" width="150 " height="150"></td>
-<td><a [routerLink]="['/cart',p.id]" class="btn btn-rounded border btn-rounded">Add to Cart</a><br><br></td>
 
  <td><a [routerLink]="['/payment']" class="btn  btn-rounded border btn-rounded">Buy Now</a></td>
 </tr></table>
