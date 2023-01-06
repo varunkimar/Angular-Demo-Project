@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<!-- <p>Name of Parent in Parent: {{name}}</p> -->
+<!-- <app-child (valueinchild)=valueinparent($event)></app-child> -->
+
+<app-child (sendChildData)="receiveChildData($event)"></app-child>
+<p>Child data in parent component: {{childDataInParent}}</p>

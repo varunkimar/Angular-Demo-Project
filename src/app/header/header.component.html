@@ -1,0 +1,61 @@
+<!-- <p>header works!</p> -->
+<!-- <nav class="">
+    <span [routerLink]="['/']">Home  </span>
+    <span [routerLink]="['/emp']">Emp  </span>
+    <span [routerLink]="['/login']">Login</span>
+    <span [routerLink]="['/logout']">LogOut</span>
+    <span [routerLink]="['/register']">Register</span>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" [routerLink]="['/']">Deloitte</a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+
+            </span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+        <div class="navbar-header navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                <!-- <li><a class="nav-link" [routerLink]="['/emp']">Emp</a></li> -->
+                
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/product']">Products</a></li>
+                <!-- <li><input type="search" class="form-control" placeholder="Search" aria-label="Search"
+                        (input)="name($event)"> -->
+                        
+                        <li>
+                        <app-search ></app-search>
+                    </li>
+                    
+                    <li class="nav-item"><a type="button" class="nav-link pl-5" [routerLink]="['/cartdisp']">Cart</a>
+                        </li>
+                        <!-- <form class="d-flex">
+
+                            <button class="btn btn-outline-dark" type="submit" [routerLink]="['/cart']">
+                  
+                               
+                  
+                                <span class="text-white">Cart</span>
+                  
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+                  
+                            </button>
+                  
+                        </form> -->
+                    </ul><div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/login']">Login</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/register']">Register</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/logout']">Logout</a></li></ul></div>
+                    <!-- <app-search (prods)="product"></app-search></li> -->
+                    <!-- <button >Search</button></span></li> -->
+        </div>
+        <!-- </div> -->
+    </div>
+</nav>
+
+<!-- <button [routerLink]="['/']">Home</button>
+<button [routerLink]="['/emp']">Emp</button>
+<button [routerLink]="['/login']">login</button> -->

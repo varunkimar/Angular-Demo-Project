@@ -1,0 +1,36 @@
+<!-- <p>about works!</p>
+<p>Display array elements with *ngFor</p>
+<div *ngFor="let e of mynums">{{e}}</div>
+<div *ngFor="let e1 of empList">{{e1.eid}}
+    {{e1.fName}}
+    {{e1.salary}}
+</div>
+<h3>List of Employees</h3>
+    <div *ngFor="let emp of empList">
+        <span *ngFor="let e of emp | keyvalue">
+            {{ e.key }}: {{ e.value }}
+        </span>
+    </div>
+
+    <h3>List of Employees</h3>
+    <span *ngFor="let e of empList[0] | keyvalue"> <b> {{ e.key }} </b> </span>
+    <div *ngFor="let emp of empList">
+        <span *ngFor="let e of emp | keyvalue"> {{ e.value }} </span>
+    </div> -->
+    <div *ngIf="empList.length > 0; else noEmps">
+        <h3>List of Employees</h3>
+        <span *ngFor="let e of empList[0] | keyvalue"> <b> {{ e.key }} </b> </span>
+        <div *ngFor="let emp of empList">
+            <span *ngFor="let e of emp | keyvalue"> {{ e.value }} </span>
+        </div>
+    </div>
+    <ng-template #noEmps>
+        <p>No employees found!</p>
+    </ng-template>
+<!-- <div>
+    <p>{{myName}}</p>
+    <p> {{myName | uppercase}} </p>
+    <p> {{myName| lowercase}} </p>
+    <p> {{sal | currency : '$'}} </p>
+    <p> {{sal | currency: 'INR'}} </p>
+</div> -->

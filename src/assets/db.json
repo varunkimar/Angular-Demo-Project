@@ -1,0 +1,45 @@
+{
+    "users": [
+      {
+        "userName": "sonu",
+        "password": "sonu",
+        "id": 1001
+      },
+      {
+        "userName": "monu",
+        "password": "monu",
+        "id": 1002
+      }
+    ],
+    "products": [
+      {
+        "id": 10001,
+        "price": 49000,
+        "productName": "oneplus mobile phone",
+        "description": "good mobile phone at this price",
+        "imgurl":"https://th.bing.com/th/id/OIP.rX6IJwbAnNOft0ot3RAHfgHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      },
+      {
+        "id": 10002,
+        "price": 95000,
+        "productName": "dell laptop",
+        "description": "very good laptop for development",
+        "imgurl":"https://th.bing.com/th/id/OIP.d8Xow2XpRSLqyhJwyaE9tQHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      },
+      {
+        "id": 10003,
+        "price": 128000,
+        "productName": "Apple Mobile",
+        "description": "standard and long lasting mobile",
+        "imgurl":"https://th.bing.com/th/id/OIP.8Vh8QbjGLhjgT21E29rQSwHaE7?w=296&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      },
+      {
+        "id": 10004,
+        "price": 95000,
+        "productName": "AlienWare Laptop",
+        "description": "very good laptop for development",
+        "imgurl":"https://th.bing.com/th/id/OIP.yZNoBWTjqMxHESnlsdIv_AHaFQ?w=268&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      }
+
+    ]
+  }

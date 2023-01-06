@@ -1,0 +1,34 @@
+<table class="table table-striped ml-2 mr-4 mt-3">
+    <tr>
+        <th style= "width: 16.66%;"class="text-primary text-center bg-muted">
+            Product Id
+        </th>
+        <th class="text-primary">
+            Product Name
+        </th>
+        <th class="text-primary">
+            Product Price
+        </th>
+        
+        <th class="text-primary">
+            Product Description
+        </th>
+        <th class="text-primary ">
+            Product Image
+        </th>
+    </tr>
+    
+<!-- product details component  -->
+
+    <tr *ngFor="let p of product">
+         <td><b>{{p.id}}</b></td>
+        <td><b>{{p.productName}}</b></td>
+        <td>{{p.price|currency:'INR'}}</td>
+    
+    <td><b>{{p.description}}</b></td>
+<td><img src="{{p.imgurl}}" width="150 " height="150"></td>
+<td><a  [routerLink]="['/cart',p.id]" class="btn btn-primary">Add to Cart</a></td>
+    <td><a  href="{{p.prod_link}}" class="btn btn-success text-center">Buy Now</a>
+</td> 
+</tr>
+</table>

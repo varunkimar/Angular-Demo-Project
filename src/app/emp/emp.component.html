@@ -1,0 +1,55 @@
+<!-- <p>emp works!</p> -->
+<div>
+    <h3>Search Employee by ID</h3>
+    <input type="number" (input)="setEId($event)">
+    <br>
+    <br>
+    <button (click)="getEmpById()">Get Employee by ID</button>
+</div>
+<hr>
+<div>
+    <h4>Search Results</h4>
+    <p><b>Employee id</b>: {{empData.id}}</p>
+    <p><b>Employee name</b>: {{empData.name}}</p>
+    <p><b>Employee email</b>: {{empData.email}}</p>
+    <p><b>Employee username</b>: {{empData.username}}</p>
+    <!-- <p><b>Employee Phone Number</b>:{{empData.phone}}</p> -->
+</div>
+<br>
+<hr>
+<div>
+    <form #employee="ngForm" (ngSubmit)="addData(employee)">
+        <input type="text" [(ngModel)]="loggedInData.name" name="name">
+        <br />
+        <br />
+        <input type="text" [(ngModel)]="loggedInData.username" name="username">
+        <br />
+        <br />
+        <input type="text" [(ngModel)]="loggedInData.email" name="email">
+    <br/><button type="submit">Submit</button>
+    </form>
+</div>
+<hr>
+<button (click)="getAllEmps()">Get All Employees</button>
+<div>
+<br>
+    <h4>List of Employees</h4>
+    <div>
+    <div *ngIf="allEmps.length > 0">
+        <table border="3" class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>User Name</th>
+            </tr>
+    
+            <tr *ngFor="let i of allEmps">
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.username}}</td>
+            <hr>
+            </tr>
+        </table>
+    </div>
