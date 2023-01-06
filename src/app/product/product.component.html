@@ -4,7 +4,7 @@
 </head>
 
 <p class="display-4 text-muted">Products</p>
- <button type="button" (click)="getProd()" >Get Products</button> 
+ <button type="button" class="btn btn-rounded btn-info"(click)="getProd()" >Click me</button> <br/>
 <!--<table class="table table-striped ml-2 mr-4 mt-3">
     <tr> -->
         <!-- <th style= "width: 16.66%;"class="text-primary text-center bg-muted">
@@ -43,6 +43,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
     <div *ngFor="let pro of allprods" class="col">
+        <br/>
 
       <div class="card h-100">
 
@@ -56,7 +57,7 @@
 
           <p class="card-text text-center">{{pro.price | currency:"INR"}}</p>
 
-          <a  [routerLink]="['/cart',pro.id]" class="btn btn-primary">Add to Cart</a><br><br>
+          <a [routerLink]="['/cart',pro.id]" class="btn btn-primary">Add to Cart</a><br><br>
 
           <a [routerLink]="['/payment']" class="btn btn-success">Buy Now</a>
 

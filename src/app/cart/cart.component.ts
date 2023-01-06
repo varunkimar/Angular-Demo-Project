@@ -54,20 +54,11 @@ export class CartComponent implements OnInit{
           else{
            
             console.log(this.cartprodlist);
-            for(let i of this.cartprodlist)
-            {
-              if(this.product[0].id===i.id){
-                this.quantity+=1;
-                console.log(this.quantity);
-                break;
-              }
-              else{
+              
                 this.service.addtocart(this.product[0])
                 .subscribe(res => console.log(res));
-                this.quantity=1;
-                break;
-              }
-            }
+                // this.quantity=1;
+                
             // const s=this.cartprodlist.find(({id})=>id===this.product[0].id);
           }
 
